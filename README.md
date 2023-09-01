@@ -26,3 +26,15 @@ docker run -d -p 8080:80 docker-practice
 ```bash
 curl http://localhost:8080
 ```
+
+## Push image to docker hub
+```bash
+docker login
+docker tag docker-practice lakshanrukantha/first-repo
+docker push lakshanrukantha/first-repo
+```
+
+## Pull image from docker hub
+```bash
+docker pull lakshanrukantha/first-repo
+```
